@@ -1,5 +1,9 @@
 # 💊 PHARMASYS - Sistem Penyimpanan Obat Modern
 
+![Version](https://img.shields.io/badge/Version-1.0.0-emerald)
+![License](https://img.shields.io/badge/Academic-Project-blue)
+![Tailwind](https://img.shields.io/badge/TailwindCSS-v3.4-38bdf8?logo=tailwind-css)
+
 **PHARMASYS** adalah platform manajemen inventori farmasi digital yang dirancang untuk meningkatkan akurasi data stok obat, memantau mutasi barang, dan mempermudah pelaporan. Proyek ini dibangun dengan arsitektur **Fullstack JavaScript** menggunakan database relasional.
 
 
@@ -71,7 +75,9 @@ USE db_obat;
 ## 2. Konfigurasi Backend
 ```
 cd backend
-npm install
+npm init -y
+npm install express mysql2 dotenv jsonwebtoken bcryptjs cors
+npm install --save-dev nodemon
 ```
 
 Buat file .env dan sesuaikan dengan konfigurasi MySQL Anda:
@@ -93,8 +99,16 @@ npx nodemon index.js
 ```
 cd ../frontend
 npm install
+npm install axios sweetalert2 vue-router
 npm run dev
 ```
+
+Instalasi Tailwind CSS v3 (Stable):
+```
+npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+npx tailwindcss init -p
+```
+
 
 # 🔑 Akun Login Uji Coba
 Semua password default adalah: 123456
